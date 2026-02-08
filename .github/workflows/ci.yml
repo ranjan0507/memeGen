@@ -2,6 +2,10 @@ name: CI
 
 on: [push, pull_request]
 
+env:
+  INVALID_VAR: ${{ secrets.NON_EXISTENT_SECRET
+  BROKEN: {{ missing_context }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
