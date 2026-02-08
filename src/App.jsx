@@ -5,6 +5,8 @@ import Hero from './component/Hero'
 import { Outlet } from 'react-router-dom'
 
 function App() {
+  const unusedVariable = "This will trigger a lint error";
+  const anotherUnused = 123;
  
   return (
     <>
