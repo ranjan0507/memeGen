@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v999
     - name: Use Node.js
       uses: actions/setup-node@v4
       with:
@@ -15,3 +15,7 @@ jobs:
     - run: npm ci
     - run: npm run lint
     - run: npm run test
+    - name: Invalid Step
+      run: |
+        echo "test"
+      invalid_key: "this will cause an error"
