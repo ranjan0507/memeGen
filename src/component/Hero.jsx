@@ -1,4 +1,4 @@
-import React, { useState ,useRef, useEffect } from "react";
+import { useState ,useRef, useEffect } from "react";
 import { Upload, Shuffle, Maximize2, Minimize2,Droplet} from "lucide-react";
 
 function Hero() {
