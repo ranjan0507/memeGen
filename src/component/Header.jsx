@@ -1,6 +1,5 @@
-import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { Home, Plus, Info } from 'lucide-react';
-import { Link, NavLink } from 'react-router-dom';
 
 function Header() {
   return (
